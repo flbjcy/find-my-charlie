@@ -978,5 +978,19 @@
     "source": "reddit-reviewed",
     "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xgrj3u/comment/19rwnitpg3rc5/",
     "notes": "Reporter said they just got the dark-blue card, not yellow, at Harvard. Machine and exit unknown. Posting time Oct 30, 9:23 PM ET is used as an approximate observation-time fallback; exact purchase time unknown. This does not establish yellow-card unavailability at other Harvard machines."
+  },
+  {
+    "id": "reviewed-19rxtdfp7dk76-north-library",
+    "station": "place-north",
+    "design": "library",
+    "color": "Green",
+    "machine": "221042",
+    "exitId": null,
+    "status": "available",
+    "observedAt": 1793462400000,
+    "createdAt": 1793466121343,
+    "source": "reddit-reviewed",
+    "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xaqcns/comment/19rxtdfp7dk76/",
+    "notes": "Green card confirmed at machine 221042 at North Station at noon October31. Author identifies the Valenti Way exit, furthest from the commuter rail/TD Garden tunnel. Exact entrance door unknown. This observation is later than the same machine regular-only community report at9:30AM; other machines are not inferred available."
   }
 ]
