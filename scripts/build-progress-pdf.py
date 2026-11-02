@@ -89,7 +89,7 @@ class HourlyCharts(Flowable):
             c.setFillColor(MUTED)
             for i, row in enumerate(self.hours):
                 local = datetime.fromtimestamp(row["hour"] / 1000, tz)
-                if local.hour in (0, 6, 12, 18):
+                if i % (max(1, (n + 47) // 48) * 6) == 0:
                     c.drawCentredString(left + (i + .5) * stride, base, local.strftime("%b %-d %-I%p"))
 
 
@@ -178,7 +178,7 @@ class ProgressDoc(BaseDocTemplate):
         canvas.rect(0, h - .22 * inch, w, .22 * inch, stroke=0, fill=1)
         canvas.setFont("Arial", 7.5)
         canvas.setFillColor(MUTED)
-        canvas.drawString(.65 * inch, .35 * inch, "FindMyCharlie  •  project progress  •  October 2026")
+        canvas.drawString(.65 * inch, .35 * inch, "FindMyCharlie  •  project progress  •  October-November 2026")
         canvas.drawRightString(w - .65 * inch, .35 * inch, str(doc.page))
         canvas.restoreState()
 
