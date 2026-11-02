@@ -35,7 +35,7 @@ Times are approximate Eastern time, based on source-control history and review l
 | **Oct 30, 5–9 PM** | Separated eight store entries from State; a compact star at 296 Washington St opens on hover/focus/tap and closes after leaving. It sits above routes, below station dots/cards. Corrected three Harvard **22123 to 221123** typos, preserving times and the yellow sold-out report. Two feedback corrections already had replacement submissions. |
 | **Oct 31, 9 AM** | Reviewed 348 accessible comments across 14 threads; 37 counted entries remained inaccessible. Added a Harvard dark-blue purchase with unknown machine and a posting-time fallback. Kept the store separate. Daily searches found no new relevant threads; full prior-image reinspection remains pending. |
 | **Oct 31, 6 PM** | Caught up on tracked replies. A noon green-card confirmation at North Station 221042 superseded its 9:30 AM regular-only report; an unknown-machine negative stayed separate. Preserved observation times and refreshed measured charts. |
-| **Nov 2, 3:30 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
+| **Nov 2, 4 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
 
 ## Problems we found and how we handled them
 
@@ -62,7 +62,7 @@ Times are approximate Eastern time, based on source-control history and review l
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 2 at about 3:30 PM ET**. They show **3,273 recorded page views**, **2,895 approximate visits**, and **318 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-02T2030Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 2 at about 4:28 PM ET**. They show **3,273 recorded page views**, **2,895 approximate visits**, and **318 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-02T2128Z.json; it contains counts, not visitor identifiers.
 
 ## Measured snapshot
 
