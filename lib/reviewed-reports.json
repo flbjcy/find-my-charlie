@@ -992,5 +992,19 @@
     "source": "reddit-reviewed",
     "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xaqcns/comment/19rxtdfp7dk76/",
     "notes": "Green card confirmed at machine 221042 at North Station at noon October31. Author identifies the Valenti Way exit, furthest from the commuter rail/TD Garden tunnel. Exact entrance door unknown. This observation is later than the same machine regular-only community report at9:30AM; other machines are not inferred available."
+  },
+  {
+    "id": "reviewed-post-1xm4w7x-back-bay-garden",
+    "station": "place-bbsta",
+    "design": "garden",
+    "color": "Purple",
+    "machine": "Unknown",
+    "exitId": null,
+    "status": "available",
+    "observedAt": 1793643431110,
+    "createdAt": 1793643431110,
+    "source": "reddit-reviewed",
+    "sourceUrl": "https://www.reddit.com/r/boston/comments/1xm4w7x/new_collectible_charlie_cards/",
+    "notes": "Post author explicitly reports getting the purple card at Back Bay today, November2. Exact machine, entrance and purchase time unknown. Posting time1:17PM ET is used only as an approximate observation-time fallback; the purchase could have been earlier that day."
   }
 ]
