@@ -1006,5 +1006,19 @@
     "source": "reddit-reviewed",
     "sourceUrl": "https://www.reddit.com/r/boston/comments/1xm4w7x/new_collectible_charlie_cards/",
     "notes": "Post author explicitly reports getting the purple card at Back Bay today, November2. Exact machine, entrance and purchase time unknown. Posting time1:17PM ET is used only as an approximate observation-time fallback; the purchase could have been earlier that day."
+  },
+  {
+    "id": "reviewed-19s23ipialll1-dtx-bunker",
+    "station": "place-dwnxg",
+    "design": "bunker",
+    "color": "Yellow",
+    "machine": "221061",
+    "exitId": null,
+    "status": "available",
+    "observedAt": 1793673480702,
+    "createdAt": 1793673480702,
+    "source": "reddit-reviewed",
+    "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xaqcns/comment/19s23ipialll1/",
+    "notes": "Reporter identifies Yellow Bunker Hill at Downtown Crossing on the Oak Grove side. Full-resolution machine photo confirms handwritten 221061; it does not show the dispensed card or an entrance sign. Design and station/side rely on explicit comment text. Exact exit unknown. Posting time November 2 at 9:38 PM ET is an approximate observation-time fallback; exact purchase time unknown."
   }
 ]

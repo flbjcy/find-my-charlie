@@ -1,6 +1,6 @@
 # FindMyCharlie: project progress
 
-**Jia Hao Liang · October 25-November 2, 2026 · all times Eastern**
+**Jia Hao Liang · October 25-November 3, 2026 · all times Eastern**
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
@@ -36,6 +36,7 @@ Times are approximate Eastern time, based on source-control history and review l
 | **Oct 31, 9 AM** | Reviewed 348 accessible comments across 14 threads; 37 counted entries remained inaccessible. Added a Harvard dark-blue purchase with unknown machine and a posting-time fallback. Kept the store separate. Daily searches found no new relevant threads; full prior-image reinspection remains pending. |
 | **Oct 31, 6 PM** | Caught up on tracked replies. A noon green-card confirmation at North Station 221042 superseded its 9:30 AM regular-only report; an unknown-machine negative stayed separate. Preserved observation times and refreshed measured charts. |
 | **Nov 2, 4 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
+| **Nov 3, 11 AM** | Added Downtown Crossing yellow **221061**, Oak Grove side. Full-size photo confirms the number; text identifies the design. Kept Nov 2, 9:38 PM posting time as an uncertain fallback; Exit unknown. Collection photos and vague negatives did not create station stock. |
 
 ## Problems we found and how we handled them
 
@@ -62,7 +63,7 @@ Times are approximate Eastern time, based on source-control history and review l
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 2 at about 4:28 PM ET**. They show **3,273 recorded page views**, **2,895 approximate visits**, and **318 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-02T2128Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 3 at about 11:14 AM ET**. They show **3,603 recorded page views**, **3,185 approximate visits**, and **340 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-03T1614Z.json; it contains counts, not visitor identifiers.
 
 ## Measured snapshot
 
