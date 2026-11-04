@@ -22,7 +22,7 @@ from reportlab.platypus import BaseDocTemplate, Flowable, Frame, PageBreak, Page
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "PROJECT_PROGRESS.md"
 OUTPUT = ROOT / "public" / "findmycharlie-progress.pdf"
-HOURLY = ROOT / "report-data" / "hourly-activity-2026-11-03T1614Z.json"
+HOURLY = ROOT / "report-data" / "hourly-activity-2026-11-04T0246Z.json"
 
 pdfmetrics.registerFont(TTFont("Arial", "/System/Library/Fonts/Supplemental/Arial.ttf"))
 pdfmetrics.registerFont(TTFont("Arial-Bold", "/System/Library/Fonts/Supplemental/Arial Bold.ttf"))
@@ -142,8 +142,8 @@ def parse(md: str):
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 8),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 8),
-                ("TOPPADDING", (0, 0), (-1, -1), .8),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), .8),
+                ("TOPPADDING", (0, 0), (-1, -1), .6),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), .6),
                 ("LINEBELOW", (0, -1), (-1, -1), .5, colors.HexColor("#D7D9D1")),
             ]))
             blocks.extend([table, Spacer(1, 5)])

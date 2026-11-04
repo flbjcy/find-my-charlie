@@ -4,11 +4,11 @@
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
-FindMyCharlie began as a way to turn scattered Reddit comments about eight limited-edition CharlieCard designs into a simple, usable map. It now combines reviewed Reddit sightings with reports submitted directly by collectors. A pin opens the card, machine, exit, observation time, source, and confidence details. It is an independent community project, not an MBTA service.
+FindMyCharlie maps eight collectible CharlieCard designs using reviewed Reddit sightings and collector submissions. Pins show machine, exit, observation time, source and confidence. Independent community project by Jia Hao Liang.
 
 ## Progress by time
 
-Times are approximate Eastern time, based on source-control history and review logs. They describe changes and reviews, not when a collector visited a station.
+Approximate Eastern times from project history; these date project changes, not station visits.
 
 | When (ET) | What changed |
 | --- | --- |
@@ -37,6 +37,7 @@ Times are approximate Eastern time, based on source-control history and review l
 | **Oct 31, 6 PM** | Caught up on tracked replies. A noon green-card confirmation at North Station 221042 superseded its 9:30 AM regular-only report; an unknown-machine negative stayed separate. Preserved observation times and refreshed measured charts. |
 | **Nov 2, 4 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
 | **Nov 3, 11 AM** | Added Downtown Crossing yellow **221061**, Oak Grove side. Full-size photo confirms the number; text identifies the design. Kept Nov 2, 9:38 PM posting time as an uncertain fallback; Exit unknown. Collection photos and vague negatives did not create station stock. |
+| **Nov 3, 9:46 PM** | Fixed North Station’s Unknown machine: standalone remark **221104** now supplies the machine field. The same conservative fallback handles clear full-number remarks; ambiguous prose stays unknown. Preserved original text/times and checked sold-out/history grouping. |
 
 ## Problems we found and how we handled them
 
@@ -63,7 +64,7 @@ Times are approximate Eastern time, based on source-control history and review l
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 3 at about 11:14 AM ET**. They show **3,603 recorded page views**, **3,185 approximate visits**, and **340 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-03T1614Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 3 at 9:46 PM ET**. They show **3,860 recorded page views**, **3,417 approximate visits**, and **371 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-04T0246Z.json; it contains counts, not visitor identifiers.
 
 ## Measured snapshot
 
