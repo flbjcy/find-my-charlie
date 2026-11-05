@@ -1,6 +1,6 @@
 # FindMyCharlie: project progress
 
-**Jia Hao Liang · October 25-November 3, 2026 · all times Eastern**
+**Jia Hao Liang · October 25-November 5, 2026 · all times Eastern**
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
@@ -36,8 +36,8 @@ Approximate Eastern times from project history; these date project changes, not 
 | **Oct 31, 9 AM** | Reviewed 348 accessible comments across 14 threads; 37 counted entries remained inaccessible. Added a Harvard dark-blue purchase with unknown machine and a posting-time fallback. Kept the store separate. Daily searches found no new relevant threads; full prior-image reinspection remains pending. |
 | **Oct 31, 6 PM** | Caught up on tracked replies. A noon green-card confirmation at North Station 221042 superseded its 9:30 AM regular-only report; an unknown-machine negative stayed separate. Preserved observation times and refreshed measured charts. |
 | **Nov 2, 4 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
-| **Nov 3, 11 AM** | Added Downtown Crossing yellow **221061**, Oak Grove side. Full-size photo confirms the number; text identifies the design. Kept Nov 2, 9:38 PM posting time as an uncertain fallback; Exit unknown. Collection photos and vague negatives did not create station stock. |
-| **Nov 3, 9:46 PM** | Fixed North Station’s Unknown machine: standalone remark **221104** now supplies the machine field. The same conservative fallback handles clear full-number remarks; ambiguous prose stays unknown. Preserved original text/times and checked sold-out/history grouping. |
+| **Nov 3** | Added Downtown Crossing yellow **221061** after full-photo machine verification; kept its uncertain Nov 2 posting-time fallback. Fixed North’s Unknown machine from standalone remark **221104**; clear full-number remarks now fill unknown fields while ambiguous prose stays unknown. Preserved originals and checked newer-negative/history grouping. |
+| **Nov 5, morning** | Found a new store thread and inspected its full-size dark-blue/silver card photo. Updated only the separate store star: all designs reported Nov 4, visit time unknown; reporter says two free cards. Kept store stock out of State station reports and counts. |
 
 ## Problems we found and how we handled them
 
@@ -64,7 +64,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 3 at 9:46 PM ET**. They show **3,860 recorded page views**, **3,417 approximate visits**, and **371 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-04T0246Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 5 at 9:06 AM ET**. They show **4,201 recorded page views**, **3,723 approximate visits**, and **387 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-05T14-06-00Z.json; it contains counts, not visitor identifiers.
 
 ## Measured snapshot
 

@@ -3,7 +3,7 @@ export const serviceCenter={lat:42.3572933,lng:-71.0582814,address:'296 Washingt
 
 export function addServiceCenterMarker(L:any,map:any){
  const content=document.createElement('div');
- content.innerHTML='<strong>Charlie Service Center</strong><span>296 Washington Street</span><p>Street-level service counter near State station.</p><p class="store-stock">All 8 card designs reported Oct 30, 2:45 PM ET. Availability may change.</p><div><a href="https://www.google.com/maps/dir/?api=1&destination=296+Washington+Street+Boston+MA+02108&travelmode=transit" target="_blank" rel="noreferrer">Directions ↗</a><a href="https://www.reddit.com/r/mbta/comments/1xhdiol/comment/19rw83ssv8vt0/" target="_blank" rel="noreferrer">Card report ↗</a></div>';
+ content.innerHTML='<strong>Charlie Service Center</strong><span>296 Washington Street</span><p>Street-level service counter near State station.</p><p class="store-stock">All 8 designs reported available Nov 4; visit time unspecified. The reporter says you can choose up to 2 cards free. Availability and limits may change.</p><div><a href="https://www.google.com/maps/dir/?api=1&destination=296+Washington+Street+Boston+MA+02108&travelmode=transit" target="_blank" rel="noreferrer">Directions ↗</a><a href="https://www.reddit.com/r/mbta/comments/1xo522n/limited_edition_charlie_card/" target="_blank" rel="noreferrer">Card report ↗</a></div>';
  // Between route paths (400) and station markers/cards (600).
  const pane=map.getPane('serviceCenterPane')||map.createPane('serviceCenterPane');
  pane.style.zIndex='450';
