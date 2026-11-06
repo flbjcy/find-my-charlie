@@ -38,7 +38,7 @@ Approximate Eastern times from project history; these date project changes, not 
 | **Nov 2, 4 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
 | **Nov 3** | Photo-verified Downtown Crossing yellow **221061**, preserving its Nov 2 posting-time fallback. Fixed North’s unknown machine from remark **221104**; clear full-number remarks now fill unknown fields. Preserved originals and checked negative/history grouping. |
 | **Nov 5, morning** | Inspected a new store thread’s full-size card photo. Updated the separate star: all designs reported Nov 4, time unknown; reporter says two free cards. Excluded store stock from State reports/counts. |
-| **Nov 6** | Linked both sites to one review-status feed, refreshed every minute. Successful scheduled checks publish time, count and coverage limits; skipped or partial runs preserve the previous timestamp. |
+| **Nov 6** | Linked both sites to one shared status feed. The cumulative counter uses unique comment IDs and never decreases; repeat checks and edits count once. Latest-check coverage stays separate. Missed checks retain the previous timestamp. |
 
 ## Problems we found and how we handled them
 
@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 6 at 10:49 AM ET**. They show **4,430 recorded page views**, **3,942 approximate visits**, and **409 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-06T1549Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 6 at 10:58 AM ET**. They show **4,432 recorded page views**, **3,944 approximate visits**, and **411 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-06T1558Z.json; it contains counts, not visitor identifiers.
 
 ## Measured snapshot
 
