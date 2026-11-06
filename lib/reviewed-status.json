@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-06T20:00:33.249820+00:00",
+  "checkedAt": "2026-11-06T22:00:12.271837+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 189 accessible comments across 16 tracked threads. Incremental review: original25 loaded of204 displayed. Daily expanded-text progress from1PM retained privately; remaining deep branches and full-resolution prior-image reinspection are incomplete.",
-  "reviewedCount": 189,
+  "coverage": "Latest check: 210 accessible comments across 16 tracked threads. Original25 loaded of204 displayed. FindMyCharlie discussion expanded to46 accessible comments including one deep reply page. Other older/deep coverage and remaining prior-image reinspection are incomplete.",
+  "reviewedCount": 210,
   "cumulativeReviewedCount": 398,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
   "displayedCount": 413,
