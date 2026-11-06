@@ -1,11 +1,14 @@
 {
-  "checkedAt": "2026-11-03T16:15:42.521790+00:00",
-  "method": "Incremental browser review and full-resolution image inspection",
-  "coverage": "Incremental review: 185 loaded comments across15 threads. Inspected two previously pending full-resolution images; added machine-specific Downtown Crossing yellow report. Older/deep/excluded-image coverage remains incomplete.",
-  "reviewedCount": 185,
-  "displayedCount": 405,
-  "threadCount": 15,
+  "checkedAt": "2026-11-05T22:07:16.683609+00:00",
+  "method": "Incremental browser review",
+  "coverage": "Latest check: 189 accessible comments across 16 tracked threads. Original25 loaded of203 displayed; no expanded or full older/deep/image coverage. Prior daily review gaps retained.",
+  "reviewedCount": 189,
+  "displayedCount": 412,
+  "threadCount": 16,
+  "fullCoverage": false,
+  "olderReviewPending": true,
   "lastExpandedReviewAt": "2026-10-31T13:05:09.957Z",
   "lastExpandedAccessibleCount": 348,
-  "lastExpandedDisplayedCount": 385
+  "lastExpandedDisplayedCount": 385,
+  "lastExpandedAttemptAt": "2026-11-05T16:21:50.407402+00:00"
 }

@@ -1,6 +1,6 @@
 # FindMyCharlie: project progress
 
-**Jia Hao Liang · October 25-November 5, 2026 · all times Eastern**
+**Jia Hao Liang · October 25-November 6, 2026 · all times Eastern**
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
@@ -15,7 +15,7 @@ Approximate Eastern times from project history; these date project changes, not 
 | **Oct 25, 6 PM** | Built the shared map, report API and community form for eight card designs, with subway routes and station entrances. OpenStreetMap tiles require no paid map key. |
 | **Oct 26, 1–2 PM** | Added reviewed Reddit sightings and a simpler map-first interface. Replaced generic symbols with cropped photos of the eight real cards. |
 | **Oct 26, 9 PM** | Fixed the incorrectly plotted Green Line near Back Bay using official MBTA route shapes. |
-| **Oct 26, 11 PM** | Published GitHub Pages as **FindMyCharlie**, connected it to the shared backend, and removed the failing sync banner. Added anonymous traffic counts, the lemon-yellow header, Garamond credit and sharper Beijing subway emblem. |
+| **Oct 26, 11 PM** | Published **FindMyCharlie** on GitHub Pages with the shared backend, anonymous traffic counts and a simpler branded header; removed the failing sync banner. |
 | **Oct 27, 2–10 AM** | Expanded reviews to related threads and nested replies. Made newer sold-out, broken and regular-only observations replace older stock reports for the same machine and card. |
 | **Oct 27, 11 AM–2 PM** | Added card photos to the report form and a Report unavailable action. Grouped same-card reports by confidence using time, corroboration and useful details. Started the private evidence archive. |
 | **Oct 27, 2–5 PM** | Corrected an edited Haymarket description without refreshing the sighting time. Fixed duplicate State pins, grouped machines under one station, and reduced overlapping labels and pointer crossings. |
@@ -27,17 +27,18 @@ Approximate Eastern times from project history; these date project changes, not 
 | **Oct 28, 10 PM** | Added historical State yellow 221277, North silver 221045 and dark-blue 222029 confirmations. A newer negative superseded the dark-blue report. Updated measured activity charts. |
 | **Oct 28, 10–11 PM** | Merged unique short machine suffixes with full IDs at the same station/card, including Park186 / 221186. Removed the mistaken Airport copy of an Aquarium report. Added browser-held removal keys, accepted payment choices and replacement of the default Unknown text when typing. |
 | **Oct 29, 10 AM** | Caught up after deferred reviews. Added North Station green BPL 221042 at Valenti Way, observed 12:32 AM; the photo confirms the machine and text identifies the design. Incremental review covered 148 loaded comments in 11 threads. |
-| **Oct 29, 6–7 PM** | Added a full-photo-confirmed Tufts orange 221072 reply, Medical Center side, using 5:38 PM posting time as a fallback for “just got.” A North silver photo corrected typed 222629 to **222029**, approximately 20 minutes later; exact time remained uncertain. |
+| **Oct 29, 6–7 PM** | Verified Tufts orange 221072, Medical Center side, with 5:38 PM posting-time fallback. A North silver photo corrected 222629 to **222029**; exact observation time remained uncertain. |
 | **Oct 30, 11 AM** | Searched for new discussions and reviewed 338 accessible comments of 360 displayed across 14 threads; 22 remained inaccessible. Inspected two new collection photos. Preserved uncertain recollections and cross-post context without inventing fresh stock. |
-| **Oct 30, 2 PM** | Added private **Feedback** left of Report: Suggestion, Report an error, Other. Scheduled reviews triage messages. Corrected the Back Bay purple typo **221106 to 221107**, preserving the original report and observation time. Tested validation, private storage, spam limits and mobile layout. |
-| **Oct 30, 2:30 PM** | Fixed GitHub map report loading after the backend host changed. The old host redirected without CORS headers, so browsers blocked requests despite intact data. Updated the frontend and archive to call the current backend directly; verified report reads and submission preflight. |
+| **Oct 30, 2 PM** | Added private **Feedback** and scheduled triage. Corrected Back Bay purple **221106 to 221107**, preserving the original and observation time. Checked storage, validation, spam limits and mobile layout. |
+| **Oct 30, 2:30 PM** | Fixed report loading after a backend host change: redirects lacked CORS headers. Updated the frontend and archive to call the current host directly; verified reads and submission preflight. |
 | **Oct 30, 3 PM** | Added a State yellow report from10:30 AM: two far-right machines at the Old State House entrance. Machine numbers and exact exit remain unknown. The already-corrected Back Bay request was not counted as a new sighting. |
 | **Oct 30, 5–9 PM** | Separated eight store entries from State; a compact star at 296 Washington St opens on hover/focus/tap and closes after leaving. It sits above routes, below station dots/cards. Corrected three Harvard **22123 to 221123** typos, preserving times and the yellow sold-out report. Two feedback corrections already had replacement submissions. |
 | **Oct 31, 9 AM** | Reviewed 348 accessible comments across 14 threads; 37 counted entries remained inaccessible. Added a Harvard dark-blue purchase with unknown machine and a posting-time fallback. Kept the store separate. Daily searches found no new relevant threads; full prior-image reinspection remains pending. |
 | **Oct 31, 6 PM** | Caught up on tracked replies. A noon green-card confirmation at North Station 221042 superseded its 9:30 AM regular-only report; an unknown-machine negative stayed separate. Preserved observation times and refreshed measured charts. |
 | **Nov 2, 4 PM** | Caught up after a browser gap and tracked a new r/boston thread. Added its Back Bay purple purchase with unknown machine/exit and a clearly marked posting-time fallback. Archived three suggestions privately for review. |
-| **Nov 3** | Added Downtown Crossing yellow **221061** after full-photo machine verification; kept its uncertain Nov 2 posting-time fallback. Fixed North’s Unknown machine from standalone remark **221104**; clear full-number remarks now fill unknown fields while ambiguous prose stays unknown. Preserved originals and checked newer-negative/history grouping. |
-| **Nov 5, morning** | Found a new store thread and inspected its full-size dark-blue/silver card photo. Updated only the separate store star: all designs reported Nov 4, visit time unknown; reporter says two free cards. Kept store stock out of State station reports and counts. |
+| **Nov 3** | Photo-verified Downtown Crossing yellow **221061**, preserving its Nov 2 posting-time fallback. Fixed North’s unknown machine from remark **221104**; clear full-number remarks now fill unknown fields. Preserved originals and checked negative/history grouping. |
+| **Nov 5, morning** | Inspected a new store thread’s full-size card photo. Updated the separate star: all designs reported Nov 4, time unknown; reporter says two free cards. Excluded store stock from State reports/counts. |
+| **Nov 6** | Linked both sites to one review-status feed, refreshed every minute. Successful scheduled checks publish time, count and coverage limits; skipped or partial runs preserve the previous timestamp. |
 
 ## Problems we found and how we handled them
 
@@ -64,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 5 at 9:06 AM ET**. They show **4,201 recorded page views**, **3,723 approximate visits**, and **387 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-05T14-06-00Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 6 at 10:49 AM ET**. They show **4,430 recorded page views**, **3,942 approximate visits**, and **409 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-06T1549Z.json; it contains counts, not visitor identifiers.
 
 ## Measured snapshot
 

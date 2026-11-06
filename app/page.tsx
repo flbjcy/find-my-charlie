@@ -4,7 +4,7 @@ import Traffic,{trackVisit} from './Traffic';
 import Feedback from './Feedback';
 import {X,Plus,LocateFixed,Info,Camera} from 'lucide-react';
 import lines from '../lib/lines.json';
-import reviewedStatus from '../lib/reviewed-status.json';
+import reviewedStatusSnapshot from '../lib/reviewed-status.json';
 import {decodePolyline} from '../lib/map-lines';
 import {layoutLabels} from '../lib/label-layout';
 import {stations,exits,designs,THREAD,age,type Report} from '../lib/catalog';
@@ -33,6 +33,8 @@ async function preparePhoto(file:File){
 }
 export default function Home(){const [traffic,setTraffic]=useState(false);useEffect(()=>{setTraffic(new URLSearchParams(location.search).has('traffic'));},[]);return traffic?<Traffic/>:<MapHome/>;}
 function MapHome(){
+ const [reviewedStatus,setReviewedStatus]=useState(reviewedStatusSnapshot);
+ useEffect(()=>{let canceled=false;const update=async()=>{try{const response=await fetch('https://raw.githubusercontent.com/flbjcy/find-my-charlie/main/lib/reviewed-status.json?minute='+Math.floor(Date.now()/60000),{cache:'no-store'});if(!response.ok)return;const data=await response.json();if(!canceled&&Number.isFinite(data.reviewedCount)&&Number.isFinite(data.threadCount)&&!isNaN(Date.parse(data.checkedAt)))setReviewedStatus(data)}catch{}};update();const timer=setInterval(()=>{if(!document.hidden)update()},60000);document.addEventListener('visibilitychange',update);return()=>{canceled=true;clearInterval(timer);document.removeEventListener('visibilitychange',update)}},[]);
  const [reports,setReports]=useState<Report[]>([]),[loading,setLoading]=useState(true),[error,setError]=useState('');
  const [design,setDesign]=useState('all'),[selected,setSelected]=useState(''),[picker,setPicker]=useState(false),[help,setHelp]=useState(false),[modal,setModal]=useState(false),[formStation,setFormStation]=useState(''),[toast,setToast]=useState(''),[busy,setBusy]=useState(false),[ready,setReady]=useState(false),[now,setNow]=useState(Date.now());
  const [reportTarget,setReportTarget]=useState<Report|null>(null),[reportStatus,setReportStatus]=useState('available'),[photoCheck,setPhotoCheck]=useState('');
