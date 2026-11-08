@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-08T18:00:37.573Z",
+  "checkedAt": "2026-11-08T20:34:37.190Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 20 accessible comments across 16 tracked threads. Incremental review of20 eligible comments across16 tracked threads, including one nested reply and one deep image reply. Exact ID/text digests unchanged from11AM. Daily expanded window review, image inspections and discovery were completed earlier today; older comments excluded by policy. No unrestricted historical coverage claim.",
-  "reviewedCount": 20,
+  "coverage": "Latest check: 17 accessible comments across 16 tracked threads. Incremental review: 17 accessible eligible comments across16 tracked threads; exact IDs/text unchanged. Three comments aged out under the seven-day policy and remain in private history and the cumulative ledger. Daily expanded window, images and discovery completed earlier today. No unrestricted historical coverage claim.",
+  "reviewedCount": 17,
   "cumulativeReviewedCount": 398,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
   "displayedCount": 0,
