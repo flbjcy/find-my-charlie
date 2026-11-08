@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-07T22:01:33.840445+00:00",
+  "checkedAt": "2026-11-08T03:13:37.223074+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 21 accessible comments across 16 tracked threads. Rolling seven-day comment review: 21 accessible eligible comments across 16 tracked threads. Older comments excluded by owner policy. Newest views and the known eligible deep image reply checked; r/mbta and r/boston discovery searched by recency. No claim of unrestricted historical coverage.",
-  "reviewedCount": 21,
+  "coverage": "Latest check: 20 accessible comments across 16 tracked threads. Incremental seven-day review: 20 accessible eligible comments across 16 tracked threads; all IDs/text unchanged. One previously eligible comment aged out. Historical comments excluded by policy; no unrestricted historical coverage claim. Daily window review and discovery completed earlier Nov7 ET.",
+  "reviewedCount": 20,
   "cumulativeReviewedCount": 398,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
   "displayedCount": 0,
