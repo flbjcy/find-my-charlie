@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-09T02:05:32.912Z",
+  "checkedAt": "2026-11-09T17:42:10.117Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 17 accessible comments across 16 tracked threads. Incremental review of 17 eligible comments across 16 tracked threads, including the known deep image reply. Exact IDs and text matched saved evidence. Daily expanded review and discovery were completed earlier on Nov 8 ET.",
-  "reviewedCount": 17,
-  "cumulativeReviewedCount": 398,
+  "coverage": "Latest check: 19 accessible comments across 17 tracked threads. Daily rolling seven-day review covered 19 eligible comments across 17 tracked threads, including one known deep reply and two comments in a newly discovered collection thread. Searched r/mbta and r/boston by recency. Older branches excluded by policy. No unrestricted historical coverage claim.",
+  "reviewedCount": 19,
+  "cumulativeReviewedCount": 400,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
-  "displayedCount": 0,
-  "threadCount": 16,
+  "displayedCount": 2,
+  "threadCount": 17,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-10-31T13:05:09.957Z",
-  "lastExpandedAccessibleCount": 348,
-  "lastExpandedDisplayedCount": 385,
-  "lastExpandedAttemptAt": "2026-11-07T15:01:27.228288+00:00"
+  "lastExpandedReviewAt": "2026-11-09T17:42:10.117Z",
+  "lastExpandedAccessibleCount": 19,
+  "lastExpandedDisplayedCount": null,
+  "lastExpandedAttemptAt": "2026-11-09T17:42:10.117Z"
 }
