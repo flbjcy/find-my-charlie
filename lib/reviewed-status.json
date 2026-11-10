@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-09T21:59:55.884Z",
+  "checkedAt": "2026-11-10T01:58:17.987Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 17 accessible comments across 17 tracked threads. Incremental catch-up of 17 eligible comments across 17 tracked threads, including the known deep reply. One new comment expresses interest without stock evidence. Three previously reviewed comments aged out. Daily expansion, discovery and image inspections were completed earlier on Nov 9 ET.",
+  "coverage": "Latest check: 17 accessible comments across 17 tracked threads. Incremental catch-up of 17 eligible comments across 17 tracked threads, including the known deep reply. Exact IDs and text matched the previous review. Daily expansion, discovery and image inspections were completed earlier on Nov 9 ET.",
   "reviewedCount": 17,
   "cumulativeReviewedCount": 401,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
