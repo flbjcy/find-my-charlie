@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-11T22:01:29.476077+00:00",
+  "checkedAt": "2026-11-12T00:04:22.562633+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 6 accessible comments across 17 tracked threads. Catch-up checked 6 eligible comments across 17 tracked threads, including the accessible deep reply page for 1xo522n. IDs, text, edit markers and attachment links matched the last successful review. Older parents and inaccessible branches were outside coverage.",
+  "coverage": "Latest check: 6 accessible comments across 17 tracked threads. Incremental check of 6 eligible comments rendered across 17 tracked threads. IDs, text, edit markers and attachment links matched the prior review. The accessible deep reply page was checked earlier today.",
   "reviewedCount": 6,
   "cumulativeReviewedCount": 401,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
