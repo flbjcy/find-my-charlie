@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-12T19:59:51.359367+00:00",
+  "checkedAt": "2026-11-12T22:04:49.058312+00:00",
   "method": "Incremental browser review",
   "coverage": "Latest check: 5 accessible comments across 17 tracked threads. Incremental check of five eligible comments rendered across 17 tracked threads. IDs, text, edit markers and attachment links matched the prior review. Daily discovery ran earlier today.",
   "reviewedCount": 5,
