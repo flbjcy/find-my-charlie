@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-13T02:02:13.250851+00:00",
+  "checkedAt": "2026-11-13T14:02:13.589100+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 4 accessible comments across 17 tracked threads. Catch-up checked four eligible rendered comments across 17 tracked threads. IDs, text, edit markers and attachment links matched the prior review. No eligible nested links were exposed.",
+  "coverage": "Latest check: 4 accessible comments across 17 tracked threads. Daily seven-day review checked four eligible rendered comments across 17 tracked threads. Saved IDs and text matched. No eligible nested links were exposed. Older parents and branches without verifiable eligible timestamps were outside coverage.",
   "reviewedCount": 4,
   "cumulativeReviewedCount": 402,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
@@ -9,8 +9,8 @@
   "threadCount": 17,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-11-12T18:08:02.749866+00:00",
-  "lastExpandedAccessibleCount": 5,
+  "lastExpandedReviewAt": "2026-11-13T14:02:13.589100+00:00",
+  "lastExpandedAccessibleCount": 4,
   "lastExpandedDisplayedCount": null,
-  "lastExpandedAttemptAt": "2026-11-12T18:08:02.749866+00:00"
+  "lastExpandedAttemptAt": "2026-11-13T14:02:13.589100+00:00"
 }
