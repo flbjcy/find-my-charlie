@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-16T22:29:12.669006+00:00",
+  "checkedAt": "2026-11-17T00:00:34.182015+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 13 accessible comments across 19 tracked threads. Catch-up checked 13 accessible eligible comments across 19 tracked threads. Five eligible reply pages provided context and yielded no additional comments. One previously reviewed eligible comment remained absent from the rendered page.",
+  "coverage": "Latest check: 13 accessible comments across 19 tracked threads. Incremental check covered 13 accessible eligible comments across 19 tracked threads. No ID, text, edit marker or attachment changes were found. Deep reply pages were checked earlier today. One previously reviewed eligible comment remained absent from the rendered page.",
   "reviewedCount": 13,
   "cumulativeReviewedCount": 415,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
