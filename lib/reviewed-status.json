@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-17T02:14:17.223863+00:00",
+  "checkedAt": "2026-11-17T16:13:24.432898+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 13 accessible comments across 19 tracked threads. Incremental check covered 13 eligible rendered comments across 19 tracked threads. IDs, text, edit markers and links matched the prior review. Deep reply pages were reviewed earlier on Nov 16 ET. One previously reviewed eligible comment remained absent from the rendered page.",
+  "coverage": "Latest check: 13 accessible comments across 19 tracked threads. Catch-up and daily review checked 13 accessible eligible comments across 19 tracked threads. Five eligible reply pages yielded replies already rendered. One previously reviewed eligible comment remained absent.",
   "reviewedCount": 13,
   "cumulativeReviewedCount": 415,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
@@ -9,8 +9,8 @@
   "threadCount": 19,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-11-16T18:01:44.016923+00:00",
-  "lastExpandedAccessibleCount": 12,
+  "lastExpandedReviewAt": "2026-11-17T16:13:24.432898+00:00",
+  "lastExpandedAccessibleCount": 13,
   "lastExpandedDisplayedCount": null,
-  "lastExpandedAttemptAt": "2026-11-16T18:01:44.016923+00:00"
+  "lastExpandedAttemptAt": "2026-11-17T16:13:24.432898+00:00"
 }
