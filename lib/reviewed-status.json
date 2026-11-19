@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-19T20:00:48.645925+00:00",
+  "checkedAt": "2026-11-19T22:01:44.483231+00:00",
   "method": "Incremental browser review",
   "coverage": "Latest check: 13 accessible comments across 19 tracked threads. Incremental comparison covered 13 eligible rendered comments across 19 tracked threads. No new or edited comments. Five eligible deep reply pages and the deleted-comment permalink were reviewed earlier today. Older comments excluded by the 168-hour policy.",
   "reviewedCount": 13,
