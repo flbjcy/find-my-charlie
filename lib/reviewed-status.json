@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-21T00:05:51.737641+00:00",
+  "checkedAt": "2026-11-22T16:02:12.868055+00:00",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 13 accessible comments across 19 tracked threads. Incremental comparison covered 13 eligible rendered comments across 19 tracked threads. No new or edited comments. Five eligible deep reply pages and the deleted-comment permalink were reviewed earlier today. Older comments excluded by the 168-hour policy.",
-  "reviewedCount": 13,
-  "cumulativeReviewedCount": 416,
+  "coverage": "Latest check: 14 accessible comments across 19 tracked threads. Reviewed 13 readable eligible comments and one verified deleted comment across 19 tracked threads. Four eligible deep reply pages opened. Saved context used for a reply whose parent aged out. Comments older than 168 hours excluded by policy. No eligible image attachments.",
+  "reviewedCount": 14,
+  "cumulativeReviewedCount": 417,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
-  "displayedCount": 204,
+  "displayedCount": 202,
   "threadCount": 19,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-11-20T13:58:31.109995+00:00",
+  "lastExpandedReviewAt": "2026-11-22T16:02:12.868055+00:00",
   "lastExpandedAccessibleCount": 14,
-  "lastExpandedDisplayedCount": 204,
-  "lastExpandedAttemptAt": "2026-11-20T13:58:31.109995+00:00"
+  "lastExpandedDisplayedCount": 202,
+  "lastExpandedAttemptAt": "2026-11-22T16:02:12.868055+00:00"
 }
