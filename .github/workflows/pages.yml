@@ -2,8 +2,11 @@ name: Publish map to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - lib/reviewed-status.json
   workflow_dispatch:
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -27,5 +30,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist-pages
+      - name: Wait for the Pages artifact to become available
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in {1..12}; do
+            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" \
+              --jq '.artifacts | any(.name == "github-pages" and .expired == false)' | grep -qx true; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "The uploaded Pages artifact is still unavailable after 60 seconds."
+          exit 1
       - id: deployment
         uses: actions/deploy-pages@v4
