@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-22T21:58:04.507216+00:00",
+  "checkedAt": "2026-11-23T20:00:48.698Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 4 accessible comments across 19 tracked threads. Incremental comparison covered four eligible rendered comments across 19 tracked threads. No new or edited comments. Daily eligible expansion and subreddit searches completed earlier today. Saved context used where parents aged out. Older comments excluded by the 168-hour policy.",
+  "coverage": "Latest check: 4 accessible comments across 19 tracked threads. Only original comments within 168 hours eligible. Four unchanged comments; one eligible deep page checked. Older comments/images excluded by policy; saved parent context retained. Search rendered older results despite week filter. Full historical/deep coverage not claimed.",
   "reviewedCount": 4,
   "cumulativeReviewedCount": 417,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
-  "displayedCount": 205,
+  "displayedCount": 202,
   "threadCount": 19,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-11-22T16:02:12.868055+00:00",
-  "lastExpandedAccessibleCount": 14,
+  "lastExpandedReviewAt": "2026-11-23T20:00:48.698Z",
+  "lastExpandedAccessibleCount": 4,
   "lastExpandedDisplayedCount": 202,
-  "lastExpandedAttemptAt": "2026-11-22T16:02:12.868055+00:00"
+  "lastExpandedAttemptAt": "2026-11-23T20:00:48.698Z"
 }
