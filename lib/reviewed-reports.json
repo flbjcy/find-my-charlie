@@ -1020,5 +1020,19 @@
     "source": "reddit-reviewed",
     "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xaqcns/comment/19s23ipialll1/",
     "notes": "Reporter identifies Yellow Bunker Hill at Downtown Crossing on the Oak Grove side. Full-resolution machine photo confirms handwritten 221061; it does not show the dispensed card or an entrance sign. Design and station/side rely on explicit comment text. Exact exit unknown. Posting time November 2 at 9:38 PM ET is an approximate observation-time fallback; exact purchase time unknown."
+  },
+  {
+    "id": "reviewed-19t504f2iow01-copley-bunker",
+    "station": "place-coecl",
+    "design": "bunker",
+    "color": "Yellow",
+    "machine": "Machine 221210",
+    "exitId": null,
+    "status": "available",
+    "observedAt": 1795557600000,
+    "createdAt": 1795557585986,
+    "source": "reddit-reviewed",
+    "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xhdiol/comment/19t504f2iow01/",
+    "notes": "Observed Nov 24 around 5 PM ET at Copley, heading toward North Station. Entrance in front of Boston Public Library; turn left down stairs. Farthest machine 221210 dispensed Bunker Hill. Exit unknown: entrance description not matched to an entrance ID. Comment posted seconds before 5 PM; approximate stated observation time retained."
   }
 ]

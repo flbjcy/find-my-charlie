@@ -1,6 +1,6 @@
 # FindMyCharlie: project progress
 
-**Jia Hao Liang · October 25-November 6, 2026 · all times Eastern**
+**Jia Hao Liang · October 25-November 24, 2026 · all times Eastern**
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 6 at 10:58 AM ET**. They show **4,432 recorded page views**, **3,944 approximate visits**, and **411 community submissions** from the first recorded traffic hour (**October 26 at 11 PM ET**) through the snapshot hour. Hours with no activity are included as zeroes. Community reports are grouped by *submission time*, not the time a collector says they observed a machine. The traffic log begins when the counter was introduced; earlier page views cannot be reconstructed. Privacy opt-outs and known bots are excluded. The underlying hourly aggregate is saved in the project’s public source as report-data/hourly-activity-2026-11-06T1558Z.json; it contains counts, not visitor identifiers.
+The charts in the PDF use a snapshot taken **November 24 at 5:01 PM ET**: **7,500 recorded page views**, **6,780 approximate visits**, and **715 community submissions**. These are actual anonymous hourly counts since tracking began, not live PDF data. Community reports are grouped by submission time. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-24T2201Z.json.
 
 ## Measured snapshot
 
@@ -89,3 +89,7 @@ Reddit browser access is not guaranteed, and a scheduled review is not instant o
 - [MBTA V3 API](https://api-v3.mbta.com/)
 
 The timeline was reconstructed from the project and GitHub commit histories; the traffic and report totals were read from the live site at the stated time. The private archive contains fuller review evidence and dated report snapshots.
+
+## November 24, 2026, 5 PM ET update
+
+Added a dated Copley Bunker Hill observation for machine 221210, toward North Station via the entrance in front of Boston Public Library. Kept Exit unknown because the description is not matched to a canonical entrance. The same comment names “State House” at another machine without a color or photo; that design remains uncertain and was not imported. The PDF charts use the actual anonymous hourly-count snapshot captured November 24 at 5:01 PM ET, not live data; no traffic before tracking began is fabricated.
