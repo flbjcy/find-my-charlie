@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-24T22:00:10.709Z",
+  "checkedAt": "2026-11-25T02:28:34.940Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 3 accessible comments across 19 tracked threads. Incremental browser review: three eligible accessible comments across all 19 threads; no images attached. Older than168h excluded; full historical/deep coverage not claimed.",
+  "coverage": "Latest check: 3 accessible comments across 19 tracked threads. Incremental review of three eligible comments across19 threads. One new and one edited comment, neither with attached images. Tip comment aged out by168h policy, not reopened. Full historical/deep coverage not claimed.",
   "reviewedCount": 3,
-  "cumulativeReviewedCount": 418,
+  "cumulativeReviewedCount": 419,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
   "displayedCount": 205,
   "threadCount": 19,

@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 24 at 5:01 PM ET**: **7,500 recorded page views**, **6,780 approximate visits**, and **715 community submissions**. These are actual anonymous hourly counts since tracking began, not live PDF data. Community reports are grouped by submission time. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-24T2201Z.json.
+The charts in the PDF use a snapshot taken **November 24 at 9:29 PM ET**: **7,522 recorded page views**, **6,800 approximate visits**, and **716 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-25T0229Z.json.
 
 ## Measured snapshot
 
@@ -93,3 +93,7 @@ The timeline was reconstructed from the project and GitHub commit histories; the
 ## November 24, 2026, 5 PM ET update
 
 Added a dated Copley Bunker Hill observation for machine 221210, toward North Station via the entrance in front of Boston Public Library. Kept Exit unknown because the description is not matched to a canonical entrance. The same comment names “State House” at another machine without a color or photo; that design remains uncertain and was not imported. The PDF charts use the actual anonymous hourly-count snapshot captured November 24 at 5:01 PM ET, not live data; no traffic before tracking began is fabricated.
+
+## November 24, 2026, 9 PM review update
+
+An edited source resolved the Copley State House design as dark blue; added the nearest-bank rightmost machine with machine number and Exit unknown, retaining the approximate 5 PM observation time. Added yellow Bunker Hill at Haymarket machine 221049, observed at 5:15 PM. Other machines and designs are not inferred. Refreshed the static PDF charts from actual hourly counts captured at 9:29 PM ET.

@@ -1034,5 +1034,33 @@
     "source": "reddit-reviewed",
     "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xhdiol/comment/19t504f2iow01/",
     "notes": "Observed Nov 24 around 5 PM ET at Copley, heading toward North Station. Entrance in front of Boston Public Library; turn left down stairs. Farthest machine 221210 dispensed Bunker Hill. Exit unknown: entrance description not matched to an entrance ID. Comment posted seconds before 5 PM; approximate stated observation time retained."
+  },
+  {
+    "exitId": null,
+    "status": "available",
+    "source": "reddit-reviewed",
+    "id": "reviewed-19t504f2iow01-copley-capitol",
+    "station": "place-coecl",
+    "design": "capitol",
+    "color": "Dark blue",
+    "machine": "Nearest bank, rightmost machine",
+    "observedAt": 1795557600000,
+    "createdAt": 1795557585986,
+    "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xhdiol/comment/19t504f2iow01/",
+    "notes": "Edited source explicitly clarifies dark blue State House. Copley toward North Station; entrance in front of Boston Public Library, left down stairs, nearest bank rightmost machine. Machine number and canonical exit unknown. Approximate Nov24 5 PM ET observation retained; not refreshed by edit."
+  },
+  {
+    "exitId": null,
+    "status": "available",
+    "source": "reddit-reviewed",
+    "id": "reviewed-19t50y7guv6rk-haymarket-bunker",
+    "station": "place-haecl",
+    "design": "bunker",
+    "color": "Yellow",
+    "machine": "Machine 221049",
+    "observedAt": 1795558500000,
+    "createdAt": 1795558699102,
+    "sourceUrl": "https://www.reddit.com/r/mbta/comments/1xhdiol/comment/19t50y7guv6rk/",
+    "notes": "Collector obtained yellow Bunker Hill at Haymarket Orange Line machine221049 on Nov24 at5:15 PM ET, corroborated by attendant. Exit unknown. No station-wide or other-design availability inference."
   }
 ]
