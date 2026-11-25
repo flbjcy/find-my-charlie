@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-25T19:40:31.337Z",
+  "checkedAt": "2026-11-25T19:57:38.317Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 12 accessible comments across 20 tracked threads. Daily eligible-window expansion: 12 distinct readable comments across20 tracked threads, five deep pages in newly discovered framing discussion, two subreddit recency searches. No attached comment images. Older than168h excluded. Full historical/deep coverage not claimed.",
+  "coverage": "Latest check: 12 accessible comments across 20 tracked threads. Incremental review of12 eligible accessible comments across20 tracked threads, including five eligible deep pages. IDs, text, edit markers and attachments unchanged. No images. Older than168h excluded; full historical/deep coverage not claimed.",
   "reviewedCount": 12,
   "cumulativeReviewedCount": 428,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
