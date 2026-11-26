@@ -1,6 +1,6 @@
 # FindMyCharlie: project progress
 
-**Jia Hao Liang · October 25-November 24, 2026 · all times Eastern**
+**Jia Hao Liang · October 25-November 25, 2026 · all times Eastern**
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 24 at 9:29 PM ET**: **7,522 recorded page views**, **6,800 approximate visits**, and **716 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-25T0229Z.json.
+The charts in the PDF use a snapshot taken **November 25 at 9:05 PM ET**: **7,681 recorded page views**, **6,946 approximate visits**, and **745 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-26T0205Z.json.
 
 ## Measured snapshot
 
@@ -97,3 +97,7 @@ Added a dated Copley Bunker Hill observation for machine 221210, toward North St
 ## November 24, 2026, 9 PM review update
 
 An edited source resolved the Copley State House design as dark blue; added the nearest-bank rightmost machine with machine number and Exit unknown, retaining the approximate 5 PM observation time. Added yellow Bunker Hill at Haymarket machine 221049, observed at 5:15 PM. Other machines and designs are not inferred. Refreshed the static PDF charts from actual hourly counts captured at 9:29 PM ET.
+
+## November 25, 2026, 9 PM review update
+
+Added a dated visitor-reported November 25–26 closure notice to the separate Charlie Service Center star at 296 Washington Street. Exact visit time is unknown and the notice is not independently verified; retained the original November 4 stock observation. No store stock was added to station reports or counts. Refreshed static PDF charts with actual hourly counts captured at 9:05 PM ET.
