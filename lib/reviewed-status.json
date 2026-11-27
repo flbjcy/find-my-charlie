@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-27T03:21:39.139Z",
+  "checkedAt": "2026-11-27T20:01:36.927Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 19 accessible comments across 21 tracked threads. Delayed scheduled catch-up:19 eligible readable comments across21 tracked threads, seven eligible deep pages. IDs, text, edits, parents and attachments unchanged. No images. Original timestamps before168h cutoff excluded. Full historical/deep coverage not claimed.",
-  "reviewedCount": 19,
-  "cumulativeReviewedCount": 435,
+  "coverage": "Latest check: 20 accessible comments across 21 tracked threads. Daily eligible-window catch-up:20 readable comments across21 threads.13 eligible deep permalink attempts, nine loaded; all20 distinct eligible IDs verified via main or alternate loaded branches. Four incomplete permalink loads are not claimed as complete. No images. One new undated recollection excluded. Older than168h excluded; full historical/deep coverage not claimed.",
+  "reviewedCount": 20,
+  "cumulativeReviewedCount": 436,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
-  "displayedCount": 213,
+  "displayedCount": 214,
   "threadCount": 21,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-11-26T20:01:33.266Z",
-  "lastExpandedAccessibleCount": 19,
-  "lastExpandedDisplayedCount": 213,
-  "lastExpandedAttemptAt": "2026-11-26T20:01:33.266Z"
+  "lastExpandedReviewAt": "2026-11-27T20:01:36.927Z",
+  "lastExpandedAccessibleCount": 20,
+  "lastExpandedDisplayedCount": 214,
+  "lastExpandedAttemptAt": "2026-11-27T20:01:36.927Z"
 }
