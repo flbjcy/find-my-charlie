@@ -14,7 +14,12 @@ const stations=[
 const placed=layoutLabels(stations,661,705);
 const aquarium=placed.find(p=>p.id==='place-aqucl');
 const tufts=placed.find(p=>p.id==='place-tumnl');
-assert(aquarium.left>tufts.left,'Aquarium label should be east of Tufts');
+if(aquarium&&tufts)assert(aquarium.left>tufts.left,'Aquarium label should be east of Tufts');
+assert(placed.length<stations.length,'Crowded overview should retain dots instead of remote labels');
+assert(placed.length>=5,'Overview should still show useful card labels');
+assert.deepEqual(layoutLabels([...stations].reverse(),661,705),placed,'Layout must be stable regardless of feed order');
+const spread=stations.map(p=>({...p,x:p.x*8,y:p.y*8}));
+assert.equal(layoutLabels(spread,661*8,705*8).length,stations.length,'Zooming in should reveal all separated station labels');
 const turn=(p,q,r)=>(q.x-p.x)*(r.y-p.y)-(q.y-p.y)*(r.x-p.x);
 const crosses=(a,b)=>{
  const p={x:a.x,y:a.y},q={x:a.endX,y:a.endY},r={x:b.x,y:b.y},s={x:b.endX,y:b.endY};
@@ -22,6 +27,8 @@ const crosses=(a,b)=>{
 };
 for(let i=0;i<placed.length;i++){
  const a=placed[i];
+ assert(Math.hypot(a.x-a.endX,a.y-a.endY)<=80,`${a.id} pointer is too long`);
+ assert(a.left>=8&&a.top>=8&&a.left+a.width<=653&&a.top+a.height<=697,'Labels stay inside the viewport');
  assert(Math.abs(a.endX-a.left)<.01||Math.abs(a.endX-a.left-a.width)<.01||Math.abs(a.endY-a.top)<.01||Math.abs(a.endY-a.top-a.height)<.01,`${a.id} pointer must end at its label edge`);
  for(let j=i+1;j<placed.length;j++){
   const b=placed[j];
@@ -31,4 +38,4 @@ for(let i=0;i<placed.length;i++){
   assert.equal(overlapX*overlapY,0,`${a.id} and ${b.id} labels overlap`);
  }
 }
-console.log('Passed: Aquarium/Tufts order, label separation, and uncluttered pointers.');
+console.log('Passed: bounded pointers, no overlaps/crossings, stable layout, and zoom disclosure.');

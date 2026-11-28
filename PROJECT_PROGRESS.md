@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 27 at 10:53 PM ET**: **7,868 recorded page views**, **7,125 approximate visits**, and **754 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T03-53-15Z.json.
+The charts in the PDF use a snapshot taken **November 27 at 11:06 PM ET**: **7,872 recorded page views**, **7,129 approximate visits**, and **754 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-06-58Z.json.
 
 ## Measured snapshot
 
@@ -108,3 +108,10 @@ Added a dated visitor-reported November 25–26 closure notice to the separate C
 Added a green Bump action beside Report unavailable. It copies the station, exit, card design, machine, payment and notes into an editable report, defaults availability to found, and starts with the visitor's current check time. Visitors review and submit a new community confirmation; earlier reports and photos remain in history. Existing photos are not resubmitted as fresh evidence.
 
 A picture announcement introduces Bump on the next visit, once per browser. Visitors can close it with X or Escape; it also closes after 10 seconds. Checked the prefilled fields and submission against a local test API, the existing unavailable-report flow, automatic dismissal and dismissal persistence. Refreshed the PDF charts from actual anonymous counts captured November 27 at 10:53 PM ET.
+
+
+## November 27, 2026, popup and map label refinement
+
+Simplified the announcement to “New addition: Bump a finding,” one example with the real green Boston Public Library card photo, and a short explanation. Matched Bump to the Report unavailable font. The translucent popup keeps its countdown beside X and closes after 10 seconds.
+
+Replaced long, displaced station callouts with short local pointers. Labels do not overlap, cross pointers or cover station dots. Crowded stations remain tappable dots with station-name tooltips; more card labels appear on zoom. Checked dense layouts, stable placement, bounded pointer lengths, zoom disclosure, the popup image and matching button fonts. Refreshed the static PDF charts from actual anonymous counts captured November 27 at 11:06 PM ET.
