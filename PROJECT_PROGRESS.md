@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 28 at 12:53 AM ET**: **7,891 recorded page views**, **7,147 approximate visits**, and **755 lifetime community submissions**. The activity total is **767: submissions plus 12 user removals**. Older removals without saved times remain in the lifetime total only, without an invented hour. Hourly report bars show submissions, including unavailable reports. This PDF is static, not live data. Counts are saved in report-data/hourly-activity-2026-11-28T05-53-46Z.json.
+The charts in the PDF use a snapshot taken **November 28 at 1:08 AM ET**: **7,897 recorded page views**, **7,151 approximate visits**, and **755 lifetime community submissions**. The activity total is **767: submissions plus 12 user removals**. Older removals without saved times remain in the lifetime total only, without an invented hour. Hourly report bars show submissions, including unavailable reports. This PDF is static, not live data. Counts are saved in report-data/hourly-activity-2026-11-28T06-08-16Z.json.
 
 ## Measured snapshot
 
@@ -152,4 +152,9 @@ Moved browser-owned reports into a blue My reports button directly beside + Repo
 
 ## November 28, 2026, V2.1 reminder refinement
 
-Moved My reports immediately left of + Report and matched its text, background and border colors to Feedback. Restored the visible Feedback word at every screen size; very narrow screens wrap the controls instead of hiding labels. Simplified the reminder into two separate bullets, one for Bump and one for My reports, and relabeled it V2.1 at the owner's request. A softly curved pointer with an open, rounded arrowhead follows the actual My reports button, including after responsive layout changes; extra space keeps the guide clear of the header. Updated the picture demo to match the new button order and colors. Verified desktop and narrow-screen rendering, exact color matches, button order, two bullets and pointer alignment. The original station-display baseline remains unchanged. Refreshed the PDF charts from actual anonymous activity counts captured November 28 at 12:53 AM ET.
+Moved My reports immediately left of + Report and matched its text, background and border colors to Feedback. Restored the visible Feedback word at every screen size; very narrow screens wrap the controls instead of hiding labels. Simplified the reminder into two separate bullets, one for Bump and one for My reports, and relabeled it V2.1 at the owner's request. A thicker yellow pointer with a soft glow and an open, rounded arrowhead follows the actual My reports button, including after responsive layout changes; extra space keeps the guide clear of the header. Updated the picture demo to match the new button order and colors. Verified desktop and narrow-screen rendering, exact color matches, button order, two bullets and pointer alignment. The original station-display baseline remains unchanged. Refreshed the PDF charts from actual anonymous activity counts captured November 28 at 12:53 AM ET.
+
+
+## November 28, 2026, glowing pointer
+
+Thickened the curved My reports pointer and added a soft yellow glow, including its open arrowhead, while preserving its shape and responsive button alignment. Verified the rendered guide and the original station-display baseline. Refreshed static activity charts from actual counts captured November 28 at 1:08 AM ET.
