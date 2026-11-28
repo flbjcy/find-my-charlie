@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-28T03:16:00.183Z",
+  "checkedAt": "2026-11-28T14:07:57.232Z",
   "method": "Incremental browser review",
-  "coverage": "Latest check: 20 accessible comments across 21 tracked threads. Incremental catch-up:20 eligible readable comments across21 tracked threads, thirteen eligible deep permalink pages loaded. IDs, exact text, edits, parents and attachments unchanged. No images. Original timestamps before168h cutoff excluded; full historical/deep coverage not claimed.",
+  "coverage": "Latest check: 20 accessible comments across 21 tracked threads. Daily eligible-window review:20 readable comments across21 tracked threads; expanded both recent nested controls, two collapsed branches and two deep continuation pages. All15 comments in My attempt verified. No eligible images. Older than168h excluded by policy; full historical/deep coverage not claimed.",
   "reviewedCount": 20,
   "cumulativeReviewedCount": 436,
   "cumulativeCountDefinition": "Distinct Reddit comment IDs reviewed across all saved checks; repeated checks and edits count once.",
-  "displayedCount": 214,
+  "displayedCount": 219,
   "threadCount": 21,
   "fullCoverage": false,
   "olderReviewPending": false,
-  "lastExpandedReviewAt": "2026-11-27T20:01:36.927Z",
+  "lastExpandedReviewAt": "2026-11-28T14:07:57.232Z",
   "lastExpandedAccessibleCount": 20,
-  "lastExpandedDisplayedCount": 214,
-  "lastExpandedAttemptAt": "2026-11-27T20:01:36.927Z"
+  "lastExpandedDisplayedCount": 219,
+  "lastExpandedAttemptAt": "2026-11-28T14:07:57.232Z"
 }
