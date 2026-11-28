@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 28 at 12:11 AM ET**: **7,887 recorded page views**, **7,143 approximate visits**, and **755 lifetime community submissions**. The audited activity total is **767: submissions plus 12 user removals**. Those older removals have no saved removal times and are included only in the lifetime total, not assigned to an invented hour. Hourly report bars show submissions, including unavailable reports. This PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T05-11-08Z.json.
+The charts in the PDF use a snapshot taken **November 28 at 12:53 AM ET**: **7,891 recorded page views**, **7,147 approximate visits**, and **755 lifetime community submissions**. The activity total is **767: submissions plus 12 user removals**. Older removals without saved times remain in the lifetime total only, without an invented hour. Hourly report bars show submissions, including unavailable reports. This PDF is static, not live data. Counts are saved in report-data/hourly-activity-2026-11-28T05-53-46Z.json.
 
 ## Measured snapshot
 
@@ -148,3 +148,8 @@ Audited all 755 distinct community rows: 637 available, 106 unavailable and 12 r
 Added a nullable removal timestamp. Future successful user removals save their actual time and count once; repeated attempts cannot add another event. Both the map traffic page and personal website now read the same inclusive activity total from the live hourly feed, while the distinct Reddit-comment review total keeps its separate definition.
 
 Moved browser-owned reports into a blue My reports button directly beside + Report, with station, design, machine, observation time and removal controls. The yellow V2.2 reminder explains both Bump and My reports. Checked a local test submission appearing in the panel, count arithmetic, unavailable submissions, duplicate-removal protection and Eastern day boundaries. Original station rendering and zoom remain protected by the saved baseline.
+
+
+## November 28, 2026, V2.1 reminder refinement
+
+Moved My reports immediately left of + Report and matched its text, background and border colors to Feedback. Simplified the reminder into two separate bullets, one for Bump and one for My reports, and relabeled it V2.1 at the owner's request. A pointer follows the actual My reports button, including after responsive layout changes; the popup stays below the header. Updated the picture demo to match the new button order and colors. Verified desktop and narrow-screen rendering, exact color matches, button order, two bullets and pointer alignment. The original station-display baseline remains unchanged. Refreshed the PDF charts from actual anonymous activity counts captured November 28 at 12:53 AM ET.
