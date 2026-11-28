@@ -1,5 +1,5 @@
 import {env} from 'cloudflare:workers';
-import {eq} from 'drizzle-orm';
+import {eq,and,ne} from 'drizzle-orm';
 import {getDb} from '../../../../db';
 import {reports} from '../../../../db/schema';
 import {allowedOrigin,cors,preflight} from '../../../../lib/cors';
@@ -19,7 +19,8 @@ export async function DELETE(req:Request,{params}:{params:Promise<{id:string}>})
   const db=getDb();
   const [report]=await db.select({source:reports.source,status:reports.status}).from(reports).where(eq(reports.id,id)).limit(1);
   if(!report||report.source!=='community'||report.status==='retracted')return cors(req,Response.json({error:'Report not found.'},{status:404}));
-  await db.update(reports).set({status:'retracted'}).where(eq(reports.id,id));
+  const changed=await db.update(reports).set({status:'retracted',removedAt:Date.now()}).where(and(eq(reports.id,id),ne(reports.status,'retracted'))).returning({id:reports.id});
+  if(!changed.length)return cors(req,Response.json({error:'Report already removed.'},{status:404}));
   await env.BUCKET?.delete('report-edit/'+id);
   return cors(req,Response.json({ok:true},{headers:{'Cache-Control':'no-store'}}));
  }catch{return cors(req,Response.json({error:'Could not remove the report. Please try again.'},{status:503}));}

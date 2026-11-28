@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {communityActivity} from '../lib/community-activity.ts';
+const now=Date.parse('2026-11-28T03:00:00Z'),yesterday=now-86400000;
+const rows=[{id:'a',status:'available',createdAt:now-1000,removedAt:null},{id:'b',status:'unavailable',createdAt:now-2000,removedAt:null},{id:'c',status:'retracted',createdAt:yesterday,removedAt:now-3000},{id:'d',status:'retracted',createdAt:yesterday,removedAt:null}];
+const count=communityActivity(rows,[],now);
+assert.equal(count.submittedCount,4);assert.equal(count.retractionCount,2);assert.equal(count.activityCount,6);
+assert.deepEqual(count.today,{day:'2026-11-27',submissions:2,removals:1,activity:3});
+assert.equal(count.undatedRemovalCount,1);assert.equal(count.retainedCount,2);
+assert.equal(communityActivity(rows,['a'],now).activityCount,6,'Admin exclusions cannot subtract submissions or invent user removals');
+assert.equal(communityActivity(rows,[],Date.parse('2026-11-28T05:00:00Z')).today.activity,0,'Eastern midnight starts a new daily count');
+assert.equal(communityActivity([],[],now).activityCount,0);
+console.log('Passed: unavailable +1, submission plus removal +2, legacy unknown dates, and Eastern day boundaries.');

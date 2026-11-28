@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 27 at 11:46 PM ET**: **7,881 recorded page views**, **7,137 approximate visits**, and **755 lifetime community submissions**. Removed and retracted submissions remain included. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-46-16Z.json.
+The charts in the PDF use a snapshot taken **November 28 at 12:11 AM ET**: **7,887 recorded page views**, **7,143 approximate visits**, and **755 lifetime community submissions**. The audited activity total is **767: submissions plus 12 user removals**. Those older removals have no saved removal times and are included only in the lifetime total, not assigned to an invented hour. Hourly report bars show submissions, including unavailable reports. This PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T05-11-08Z.json.
 
 ## Measured snapshot
 
@@ -139,3 +139,12 @@ Restored the original station-label placement algorithm, label sizes and pointer
 ## November 27, 2026, exact original display baseline
 
 Restored the station rendering, card-picture styling, marker geometry, initial map view, fit bounds, zoom limits and reset framing from the saved source before this work (Sites source 5e9d13c; public mirror 2df5e6d). Kept Bump, the V2.1 reminder and live community totals. Discarded the unpublished enlargement experiment. Added a checked station-display baseline so subsequent builds reject unintended changes to the saved station styles, map initialization and layout algorithm. Both hosted versions use the same baseline.
+
+
+## November 27, 2026, V2.2 report activity and My reports
+
+Audited all 755 distinct community rows: 637 available, 106 unavailable and 12 retracted. Under the owner's clarified rule, each submission counts once and removing it adds a second activity, producing 767 community report activities. The six November 27 submissions are included. Older removal dates were not recorded, so those 12 removals remain undated rather than being attributed to that day. One administrative exclusion is separate from user removal actions.
+
+Added a nullable removal timestamp. Future successful user removals save their actual time and count once; repeated attempts cannot add another event. Both the map traffic page and personal website now read the same inclusive activity total from the live hourly feed, while the distinct Reddit-comment review total keeps its separate definition.
+
+Moved browser-owned reports into a blue My reports button directly beside + Report, with station, design, machine, observation time and removal controls. The yellow V2.2 reminder explains both Bump and My reports. Checked a local test submission appearing in the panel, count arithmetic, unavailable submissions, duplicate-removal protection and Eastern day boundaries. Original station rendering and zoom remain protected by the saved baseline.
