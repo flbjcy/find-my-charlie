@@ -1,6 +1,6 @@
 # FindMyCharlie: project progress
 
-**Jia Hao Liang · October 25-November 25, 2026 · all times Eastern**
+**Jia Hao Liang · October 25-November 27, 2026 · all times Eastern**
 **Live map:** https://flbjcy.github.io/find-my-charlie/  
 **Source:** https://github.com/flbjcy/find-my-charlie
 
@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 25 at 9:05 PM ET**: **7,681 recorded page views**, **6,946 approximate visits**, and **745 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-26T0205Z.json.
+The charts in the PDF use a snapshot taken **November 27 at 10:53 PM ET**: **7,868 recorded page views**, **7,125 approximate visits**, and **754 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T03-53-15Z.json.
 
 ## Measured snapshot
 
@@ -101,3 +101,10 @@ An edited source resolved the Copley State House design as dark blue; added the 
 ## November 25, 2026, 9 PM review update
 
 Added a dated visitor-reported November 25–26 closure notice to the separate Charlie Service Center star at 296 Washington Street. Exact visit time is unknown and the notice is not independently verified; retained the original November 4 stock observation. No store stock was added to station reports or counts. Refreshed static PDF charts with actual hourly counts captured at 9:05 PM ET.
+
+
+## November 27, 2026, Bump feature update
+
+Added a green Bump action beside Report unavailable. It copies the station, exit, card design, machine, payment and notes into an editable report, defaults availability to found, and starts with the visitor's current check time. Visitors review and submit a new community confirmation; earlier reports and photos remain in history. Existing photos are not resubmitted as fresh evidence.
+
+A picture announcement introduces Bump on the next visit, once per browser. Visitors can close it with X or Escape; it also closes after 10 seconds. Checked the prefilled fields and submission against a local test API, the existing unavailable-report flow, automatic dismissal and dismissal persistence. Refreshed the PDF charts from actual anonymous counts captured November 27 at 10:53 PM ET.
