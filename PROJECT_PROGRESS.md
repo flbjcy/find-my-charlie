@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 27 at 11:20 PM ET**: **7,874 recorded page views**, **7,131 approximate visits**, and **754 lifetime community submissions**. Removed and retracted submissions remain included. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-20-45Z.json.
+The charts in the PDF use a snapshot taken **November 27 at 11:37 PM ET**: **7,878 recorded page views**, **7,135 approximate visits**, and **754 lifetime community submissions**. Removed and retracted submissions remain included. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-37-25Z.json.
 
 ## Measured snapshot
 
@@ -129,3 +129,8 @@ Added a live community summary to the traffic dashboard with lifetime submission
 Restored a visible card label for every station with available cards. The layout no longer collapses crowded station labels into dots. It searches and refines all label positions together, favoring nearby placements, geographic order and fewer pointer crossings while retaining every label. Map controls and credits reserve space.
 
 Card pictures are sorted by each design's newest observation within the station. The grid has two columns: newest top left, second top right, third bottom left, then across each subsequent row. The reminder is titled “V2.1 update: Bump a finding” and has a translucent tint mixed from the site's yellow. Verified 30 labels for 30 stations in the preview, row order, layout tests and report-state checks. Refreshed static activity charts from actual counts captured November 27 at 11:20 PM ET.
+
+
+## November 27, 2026, station display restoration
+
+Restored the original station-label placement algorithm, label sizes and pointer styling at the owner's request. Kept the newest-first, two-column card order. For odd card counts, the final card spans both columns and is centered, including a single-card station. Verified exact centering for 1-, 3- and 5-card station labels in the browser, station coverage, layout tests and type checking. The V2.1 yellow reminder and Bump flow remain in place. Refreshed static PDF charts from actual counts captured November 27 at 11:37 PM ET.

@@ -16,7 +16,7 @@ const aquarium=placed.find(p=>p.id==='place-aqucl');
 const tufts=placed.find(p=>p.id==='place-tumnl');
 if(aquarium&&tufts)assert(aquarium.left>tufts.left,'Aquarium label should be east of Tufts');
 assert.equal(placed.length,stations.length,'Every station must retain a visible card label');
-assert(placed.length>=5,'Overview should still show useful card labels');
+
 assert.deepEqual(layoutLabels([...stations].reverse(),661,705),placed,'Layout must be stable regardless of feed order');
 const spread=stations.map(p=>({...p,x:p.x*8,y:p.y*8}));
 assert.equal(layoutLabels(spread,661*8,705*8).length,stations.length,'Zooming in should reveal all separated station labels');

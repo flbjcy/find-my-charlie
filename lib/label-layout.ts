@@ -1,63 +1,53 @@
 export type LabelInput={id:string;x:number;y:number;width:number;height:number};
 type Box={left:number;top:number;width:number;height:number};
 type Point={x:number;y:number};
+type Segment={start:Point;end:Point};
 type Positioned=LabelInput&Box&{endX:number;endY:number};
-const gap=7;
-const overlaps=(a:Box,b:Box)=>a.left<b.left+b.width+gap&&a.left+a.width+gap>b.left&&a.top<b.top+b.height+gap&&a.top+a.height+gap>b.top;
+
+const overlap=(a:Box,b:Box)=>Math.max(0,Math.min(a.left+a.width+8,b.left+b.width+8)-Math.max(a.left,b.left))*Math.max(0,Math.min(a.top+a.height+8,b.top+b.height+8)-Math.max(a.top,b.top));
+
 function position(p:LabelInput,box:Box):Positioned{
+ // End the pointer at the box edge, so it never runs across the white label.
  const cx=box.left+box.width/2,cy=box.top+box.height/2,dx=p.x-cx,dy=p.y-cy;
  const t=Math.min(dx?Math.abs((box.width/2)/dx):Infinity,dy?Math.abs((box.height/2)/dy):Infinity,1);
  return {...p,...box,endX:cx+dx*t,endY:cy+dy*t};
 }
-function crosses(a:Point,b:Point,c:Point,d:Point){
+
+function crosses(a:Segment,b:Segment){
  const turn=(p:Point,q:Point,r:Point)=>(q.x-p.x)*(r.y-p.y)-(q.y-p.y)*(r.x-p.x);
- return turn(a,b,c)*turn(a,b,d)<0&&turn(c,d,a)*turn(c,d,b)<0;
+ return turn(a.start,a.end,b.start)*turn(a.start,a.end,b.end)<0&&turn(b.start,b.end,a.start)*turn(b.start,b.end,a.end)<0;
 }
-function throughBox(a:Point,b:Point,box:Box){
- const tl={x:box.left-3,y:box.top-3},tr={x:box.left+box.width+3,y:box.top-3},br={x:tr.x,y:box.top+box.height+3},bl={x:tl.x,y:br.y};
- return [[tl,tr],[tr,br],[br,bl],[bl,tl]].some(([c,d])=>crosses(a,b,c,d));
-}
+
 export function layoutLabels(inputs:LabelInput[],width:number,height:number){
  const placed:Positioned[]=[];
- const reserved:Box[]=[{left:0,top:0,width:Math.min(width-64,255),height:43},{left:width-52,top:height-120,width:52,height:120},{left:0,top:height-54,width:Math.min(width-60,310),height:54}];
- const ordered=[...inputs].sort((a,b)=>a.y-b.y||a.x-b.x||a.id.localeCompare(b.id));
- const candidates=(p:LabelInput)=>{
-  const boxes:Positioned[]=[];
-  for(let radius=0;radius<=Math.max(width,height);radius+=24)for(let direction=0;direction<16;direction++){
+ for(const p of [...inputs].sort((a,b)=>a.y-b.y||a.id.localeCompare(b.id))){
+  let best:Box={left:p.x-p.width/2,top:p.y-p.height-16,width:p.width,height:p.height},score=Infinity;
+  // Search nearby positions, avoiding other labels, station dots and pointer crossings.
+  for(let radius=0;radius<=480;radius+=24)for(let direction=0;direction<16;direction++){
    const angle=-Math.PI/2+direction*Math.PI/8;
-   const cx=p.x+Math.cos(angle)*(radius+p.width/2+10),cy=p.y+Math.sin(angle)*(radius+p.height/2+10);
-   boxes.push(position(p,{left:Math.max(6,Math.min(width-p.width-6,cx-p.width/2)),top:Math.max(6,Math.min(height-p.height-6,cy-p.height/2)),width:p.width,height:p.height}));
+   const cx=p.x+Math.cos(angle)*(radius+p.width/2+16),cy=p.y+Math.sin(angle)*(radius+p.height/2+16);
+   const box={left:Math.max(8,Math.min(width-p.width-8,cx-p.width/2)),top:Math.max(8,Math.min(height-p.height-8,cy-p.height/2)),width:p.width,height:p.height};
+   const area=placed.reduce((n,b)=>n+overlap(box,b),0);
+   const covers=inputs.reduce((n,q)=>n+(q.x>box.left-6&&q.x<box.left+box.width+6&&q.y>box.top-6&&q.y<box.top+box.height+6?1:0),0);
+   const candidate=position(p,box);
+   const segment={start:{x:p.x,y:p.y},end:{x:candidate.endX,y:candidate.endY}};
+   const crossings=placed.reduce((n,q)=>n+Number(crosses(segment,{start:{x:q.x,y:q.y},end:{x:q.endX,y:q.endY}})),0);
+   // Give Aquarium the eastern slot and keep Tufts to its west when possible.
+   const wrongSide=(p.id==='place-aqucl'&&box.left+p.width/2<p.x+60)||(p.id==='place-tumnl'&&box.left+p.width/2>p.x+80);
+   const cost=area*100000+covers*10000+crossings*3000+Number(wrongSide)*2500+Math.hypot(box.left+p.width/2-p.x,box.top+p.height/2-p.y)+direction*.01;
+   if(cost<score){score=cost;best=box}
   }
-  return boxes;
- };
- const options=new Map(ordered.map(p=>[p.id,candidates(p)]));
- const score=(p:Positioned,others:Positioned[])=>{
-  const cx=p.left+p.width/2,cy=p.top+p.height/2,end={x:p.endX,y:p.endY};
-  let cost=(cx-p.x)**2*.04+(cy-p.y)**2*.12;
-  for(const q of reserved){const ox=Math.max(0,Math.min(p.left+p.width,q.left+q.width)-Math.max(p.left,q.left)),oy=Math.max(0,Math.min(p.top+p.height,q.top+q.height)-Math.max(p.top,q.top));cost+=ox*oy*10000}
-  for(const q of inputs)if(q.x>p.left-5&&q.x<p.left+p.width+5&&q.y>p.top-5&&q.y<p.top+p.height+5)cost+=50000;
-  for(const q of others){
-   const ox=Math.max(0,Math.min(p.left+p.width+5,q.left+q.width+5)-Math.max(p.left,q.left)),oy=Math.max(0,Math.min(p.top+p.height+5,q.top+q.height+5)-Math.max(p.top,q.top));
-   cost+=ox*oy*10000;
-   const qe={x:q.endX,y:q.endY};
-   if(crosses(p,end,q,qe))cost+=30000;
-   if(throughBox(p,end,q)||throughBox(q,qe,p))cost+=10000;
-   const qcy=q.top+q.height/2;
-   if(Math.abs(q.x-p.x)<200&&Math.abs(p.y-q.y)>24&&(p.y-q.y)*(cy-qcy)<0)cost+=8000+(cy-qcy)**2;
+  placed.push(position(p,best));
+ }
+ // If the greedy search still reverses the pair, exchange their slots when safe.
+ const aquarium=placed.find(p=>p.id==='place-aqucl'),tufts=placed.find(p=>p.id==='place-tumnl');
+ if(aquarium&&tufts&&aquarium.left<=tufts.left){
+  const a=position(aquarium,{left:tufts.left,top:tufts.top,width:aquarium.width,height:aquarium.height});
+  const t=position(tufts,{left:aquarium.left,top:aquarium.top,width:tufts.width,height:tufts.height});
+  const others=placed.filter(p=>p!==aquarium&&p!==tufts);
+  if(!overlap(a,t)&&others.every(p=>!overlap(a,p)&&!overlap(t,p))){
+   placed[placed.indexOf(aquarium)]=a;placed[placed.indexOf(tufts)]=t;
   }
-  return cost;
- };
- const choose=(p:LabelInput,others:Positioned[])=>{let best=options.get(p.id)![0],bestScore=Infinity;for(const box of options.get(p.id)!){const cost=score(box,others);if(cost<bestScore){best=box;bestScore=cost}}return best};
- for(const p of ordered)placed.push(choose(p,placed));
- // Revisit the full layout so an early label cannot force later stations away.
- for(let pass=0;pass<2;pass++)for(let i=placed.length-1;i>=0;i--)placed[i]=choose(placed[i],placed.filter((_,j)=>j!==i));
- // Exchange whole label slots when that improves the shared geography/crossings.
- // Moving labels individually cannot escape a crowded set of occupied slots.
- for(let pass=0;pass<2;pass++)for(let i=0;i<placed.length;i++)for(let j=i+1;j<placed.length;j++){
-  const a=placed[i],b=placed[j],others=placed.filter((_,k)=>k!==i&&k!==j);
-  const at=(p:Positioned,q:Positioned)=>position(p,{left:Math.max(6,Math.min(width-p.width-6,q.left+(q.width-p.width)/2)),top:Math.max(6,Math.min(height-p.height-6,q.top+(q.height-p.height)/2)),width:p.width,height:p.height});
-  const nextA=at(a,b),nextB=at(b,a);
-  if(score(nextA,[...others,nextB])+score(nextB,[...others,nextA])+1<score(a,[...others,b])+score(b,[...others,a])){placed[i]=nextA;placed[j]=nextB}
  }
  return placed;
 }

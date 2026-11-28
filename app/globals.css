@@ -45,4 +45,4 @@ header .add-report{margin-left:0}@media(max-width:450px){header{display:grid;gri
 
 .traffic-totals small{display:block;color:#454638;font-size:13px;margin-top:5px}.traffic-updated{font-size:14px;color:#58635c}
 
-.pin-label{width:100px;min-width:100px}.pin-cards{display:grid;grid-template-columns:repeat(2,31px);gap:3px;max-width:none}.pin-label b{max-width:94px;white-space:normal;text-align:center}.pin-cards:has(.pin-card:only-child){grid-template-columns:31px}@media(max-width:650px){.pin-label{width:92px;min-width:92px}.pin-cards{grid-template-columns:repeat(2,28px)}.pin-cards:has(.pin-card:only-child){grid-template-columns:28px}}
+.pin-cards{display:grid;grid-template-columns:repeat(2,31px);gap:3px;max-width:none}.pin-card:last-child:nth-child(odd){grid-column:1 / -1;justify-self:center}@media(max-width:650px){.pin-cards{grid-template-columns:repeat(2,28px)}}
