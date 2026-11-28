@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 27 at 11:06 PM ET**: **7,872 recorded page views**, **7,129 approximate visits**, and **754 community submissions**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-06-58Z.json.
+The charts in the PDF use a snapshot taken **November 27 at 11:06 PM ET**: **7,872 recorded page views**, **7,129 approximate visits**, and **754 lifetime community submissions** (**741 retained reports; 13 removed or retracted**). Latest community submission: **November 27, 8:58 PM ET**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-06-58Z.json.
 
 ## Measured snapshot
 
@@ -115,3 +115,10 @@ A picture announcement introduces Bump on the next visit, once per browser. Visi
 Simplified the announcement to “New addition: Bump a finding,” one example with the real green Boston Public Library card photo, and a short explanation. Matched Bump to the Report unavailable font. The translucent popup keeps its countdown beside X and closes after 10 seconds.
 
 Replaced long, displaced station callouts with short local pointers. Labels do not overlap, cross pointers or cover station dots. Crowded stations remain tappable dots with station-name tooltips; more card labels appear on zoom. Checked dense layouts, stable placement, bounded pointer lengths, zoom disclosure, the popup image and matching button fonts. Refreshed the static PDF charts from actual anonymous counts captured November 27 at 11:06 PM ET.
+
+
+## November 27, 2026, community count verification
+
+Verified the live database contains 754 community submissions: 636 available, 106 unavailable and 12 retracted. One additional retained database row is excluded by the removal registry, leaving 741 community reports in the public feed and 13 removed or retracted submissions overall. The latest submission arrived November 27 at 8:58 PM ET. The lifetime total is current; it is not an available-machine count.
+
+Added a live community summary to the traffic dashboard with lifetime submissions, retained and removed totals, latest submission time and refresh timestamp. It reloads every minute. The PDF retains a dated static snapshot and clearly separates lifetime submissions from retained reports. No total was increased without a new submission.
