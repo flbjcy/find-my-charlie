@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "5e9d13c5dde16f9f5e7905c0ccc8710bd97895a2",
+  "publicMirrorCommit": "2df5e6d",
+  "policy": "Preserve the original station display, opening zoom and framing. Change this baseline only upon an explicit owner request. Bump and the popup are independent.",
+  "sha256": {
+    "stationStyles": "30b167355a4eb790c296240b8f46d180e274f4af5c8eef0140fc43e3b4b8b92e",
+    "mapInitializationAndRendering": "8649ed803705a99a92ddee2148e8f47aa260a4d391085cdaaa69231c6ed70148",
+    "labelPlacement": "ca652691f858c93605f601c3b2c74c01b7ac16f24f2e7f9b493d002d620483e2"
+  }
+}

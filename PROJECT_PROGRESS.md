@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 27 at 11:37 PM ET**: **7,878 recorded page views**, **7,135 approximate visits**, and **754 lifetime community submissions**. Removed and retracted submissions remain included. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-37-25Z.json.
+The charts in the PDF use a snapshot taken **November 27 at 11:46 PM ET**: **7,881 recorded page views**, **7,137 approximate visits**, and **755 lifetime community submissions**. Removed and retracted submissions remain included. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-46-16Z.json.
 
 ## Measured snapshot
 
@@ -134,3 +134,8 @@ Card pictures are sorted by each design's newest observation within the station.
 ## November 27, 2026, station display restoration
 
 Restored the original station-label placement algorithm, label sizes and pointer styling at the owner's request. Kept the newest-first, two-column card order. For odd card counts, the final card spans both columns and is centered, including a single-card station. Verified exact centering for 1-, 3- and 5-card station labels in the browser, station coverage, layout tests and type checking. The V2.1 yellow reminder and Bump flow remain in place. Refreshed static PDF charts from actual counts captured November 27 at 11:37 PM ET.
+
+
+## November 27, 2026, exact original display baseline
+
+Restored the station rendering, card-picture styling, marker geometry, initial map view, fit bounds, zoom limits and reset framing from the saved source before this work (Sites source 5e9d13c; public mirror 2df5e6d). Kept Bump, the V2.1 reminder and live community totals. Discarded the unpublished enlargement experiment. Added a checked station-display baseline so subsequent builds reject unintended changes to the saved station styles, map initialization and layout algorithm. Both hosted versions use the same baseline.

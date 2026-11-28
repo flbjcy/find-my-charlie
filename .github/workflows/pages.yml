@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci
+      - run: node scripts/check-station-display.mjs
       - run: npx vite build --config vite.pages.config.ts
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

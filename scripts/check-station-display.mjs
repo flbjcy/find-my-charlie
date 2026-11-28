@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+const read=path=>fs.readFileSync(new URL('../'+path,import.meta.url),'utf8');
+const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
+const page=read('app/page.tsx'),css=read('app/globals.css');
+const start=' useEffect(()=>{let canceled=false;const css=',end=' function openReport';
+const stationRules=[...css.matchAll(/([^{}]+)\{([^{}]*)\}/g)].filter(m=>/\.(?:pin-|card-marker|map(?:\b|-)|leaflet-)/.test(m[1])).map(m=>m[0].trim());
+const actual={stationStyles:hash(stationRules.join('\n')),mapInitializationAndRendering:hash(page.slice(page.indexOf(start),page.indexOf(end))),labelPlacement:hash(read('lib/label-layout.ts'))};
+const baseline=JSON.parse(read('lib/station-display-baseline.json'));
+assert.deepEqual(actual,baseline.sha256,'Station display differs from the owner-locked original. Only update the baseline after an explicit owner request.');
+console.log('Passed: original station styles, opening zoom, framing, markers and label placement.');

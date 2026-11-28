@@ -38,3 +38,5 @@ Public frontend: https://flbjcy.github.io/find-my-charlie/
 Build with `npx vite build --config vite.pages.config.ts`. GitHub Actions publishes `dist-pages` on pushes to main. Shared API routes and D1 remain on the existing Sites deployment; its CORS allowlist permits https://flbjcy.github.io. Hourly browser reviews search relevant Reddit threads and publish supported updates while Codex is running.
 
 Local GitHub checkout: sibling directory `charlie-card-github`. Copy authored source changes there, preserve its Git history, and push to main to publish frontend updates. Never copy local secrets, runtime databases, dependency folders or build output.
+
+Station display is locked to the original pre-Bump baseline in lib/station-display-baseline.json. Run node scripts/check-station-display.mjs before publication. Changes to station styles, rendering, opening zoom or framing require an explicit owner request.
