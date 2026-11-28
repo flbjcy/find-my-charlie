@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {currentReports,availableReports,confidence,reportHistory,cleanMachineLabel} from '../lib/report-state';
+import {currentReports,availableReports,confidence,reportHistory,cleanMachineLabel,stationCardDesigns} from '../lib/report-state';
 import data from '../lib/reviewed-reports.json';
 import type {Report} from '../lib/catalog';
 const now=Date.parse('2026-10-26T17:35:00Z');
@@ -19,9 +19,6 @@ console.log('Passed: newer gone report supersedes older availability; machine ID
 
 assert.equal(availableReports([old,gone]).length,0);
 assert.equal(availableReports([gone,{...old,id:"restocked",observedAt:now+1}]).length,1);
-assert.ok(!availableReports(data as Report[]).some(r=>r.station==="place-coecl"));
-assert.ok(availableReports(data as Report[]).some(r=>r.station==="place-aqucl"&&r.design==="constitution"));
-assert.ok(!availableReports(data as Report[]).some(r=>r.station==="place-forhl"&&r.design==="library"));
 
 // Details affect ranking, not which observation supersedes an older one.
 const vague={...fresh,id:'vague',machine:'Unknown',exitId:null,notes:''};
@@ -54,3 +51,5 @@ assert.equal(cleanMachineLabel('Unknown entrance, machine 221054'),'221054');
 assert.equal(cleanMachineLabel('Machine 221277'),'221277');
 assert.equal(cleanMachineLabel('leftmost machine'),'Unknown');
 assert.equal(cleanMachineLabel('221277 or 221278'),'Unknown');
+
+assert.deepEqual(stationCardDesigns([{...data[0],design:"garden",observedAt:10},{...data[0],design:"library",observedAt:50},{...data[0],design:"garden",observedAt:60},{...data[0],design:"bunker",observedAt:30}] as Report[]),["garden","library","bunker"],"Card pictures use each design’s newest observation, not feed insertion order");

@@ -65,7 +65,7 @@ Approximate Eastern times from project history; these date project changes, not 
 
 ## Hourly activity
 
-The charts in the PDF use a snapshot taken **November 27 at 11:06 PM ET**: **7,872 recorded page views**, **7,129 approximate visits**, and **754 lifetime community submissions** (**741 retained reports; 13 removed or retracted**). Latest community submission: **November 27, 8:58 PM ET**. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-06-58Z.json.
+The charts in the PDF use a snapshot taken **November 27 at 11:20 PM ET**: **7,874 recorded page views**, **7,131 approximate visits**, and **754 lifetime community submissions**. Removed and retracted submissions remain included. Actual anonymous counts since tracking began; this PDF is static, not live data. No earlier traffic is reconstructed. Counts are saved in report-data/hourly-activity-2026-11-28T04-20-45Z.json.
 
 ## Measured snapshot
 
@@ -122,3 +122,10 @@ Replaced long, displaced station callouts with short local pointers. Labels do n
 Verified the live database contains 754 community submissions: 636 available, 106 unavailable and 12 retracted. One additional retained database row is excluded by the removal registry, leaving 741 community reports in the public feed and 13 removed or retracted submissions overall. The latest submission arrived November 27 at 8:58 PM ET. The lifetime total is current; it is not an available-machine count.
 
 Added a live community summary to the traffic dashboard with lifetime submissions, retained and removed totals, latest submission time and refresh timestamp. It reloads every minute. The PDF retains a dated static snapshot and clearly separates lifetime submissions from retained reports. No total was increased without a new submission.
+
+
+## November 27, 2026, V2.1 display update
+
+Restored a visible card label for every station with available cards. The layout no longer collapses crowded station labels into dots. It searches and refines all label positions together, favoring nearby placements, geographic order and fewer pointer crossings while retaining every label. Map controls and credits reserve space.
+
+Card pictures are sorted by each design's newest observation within the station. The grid has two columns: newest top left, second top right, third bottom left, then across each subsequent row. The reminder is titled “V2.1 update: Bump a finding” and has a translucent tint mixed from the site's yellow. Verified 30 labels for 30 stations in the preview, row order, layout tests and report-state checks. Refreshed static activity charts from actual counts captured November 27 at 11:20 PM ET.

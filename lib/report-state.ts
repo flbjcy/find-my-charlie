@@ -37,3 +37,5 @@ export function rankedCardGroups(reports:Report[],station:string,design='all',no
  return [...groups.entries()].map(([design,items])=>({design,items:items.sort((a,b)=>confidence(b,reports,now).score-confidence(a,reports,now).score||b.observedAt-a.observedAt||a.id.localeCompare(b.id))})).sort((a,b)=>confidence(b.items[0],reports,now).score-confidence(a.items[0],reports,now).score||a.design.localeCompare(b.design));
 }
 export function reportHistory(r:Report,reports:Report[]){return reports.filter(x=>machineKey(x,reports)===machineKey(r,reports)).sort((a,b)=>b.observedAt-a.observedAt||b.createdAt-a.createdAt);}
+
+export function stationCardDesigns(reports:Report[]){const latest=new Map<string,number>();for(const r of reports)latest.set(r.design,Math.max(latest.get(r.design)??-Infinity,r.observedAt));return [...latest.keys()].sort((a,b)=>latest.get(b)!-latest.get(a)!||a.localeCompare(b))}

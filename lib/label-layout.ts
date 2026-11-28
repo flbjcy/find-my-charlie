@@ -19,27 +19,45 @@ function throughBox(a:Point,b:Point,box:Box){
 }
 export function layoutLabels(inputs:LabelInput[],width:number,height:number){
  const placed:Positioned[]=[];
- // Short local callouts preserve geography. Crowded dots remain interactive;
- // additional labels naturally fit as stations spread apart when zooming in.
+ const reserved:Box[]=[{left:0,top:0,width:Math.min(width-64,255),height:43},{left:width-52,top:height-120,width:52,height:120},{left:0,top:height-54,width:Math.min(width-60,310),height:54}];
  const ordered=[...inputs].sort((a,b)=>a.y-b.y||a.x-b.x||a.id.localeCompare(b.id));
- for(const p of ordered){
-  let best:Positioned|undefined,score=Infinity;
-  for(const distance of [12,28,44,60,76])for(let direction=0;direction<16;direction++){
-   const angle=-Math.PI/2+direction*Math.PI/8,dx=Math.cos(angle),dy=Math.sin(angle);
-   const cx=p.x+dx*(distance+p.width/2),cy=p.y+dy*(distance+p.height/2);
-   const box={left:cx-p.width/2,top:cy-p.height/2,width:p.width,height:p.height};
-   if(box.left<8||box.top<8||box.left+p.width>width-8||box.top+p.height>height-8)continue;
-   if(placed.some(q=>overlaps(box,q)))continue;
-   if(inputs.some(q=>q.x>box.left-8&&q.x<box.left+p.width+8&&q.y>box.top-8&&q.y<box.top+p.height+8))continue;
-   const c=position(p,box),end={x:c.endX,y:c.endY};
-   const length=Math.hypot(end.x-p.x,end.y-p.y);if(length>80)continue;
-   if(placed.some(q=>crosses(p,end,q,{x:q.endX,y:q.endY})||throughBox(p,end,q)||throughBox(q,{x:q.endX,y:q.endY},box)))continue;
-   // Nearby labels follow north/south order rather than swapping stations.
-   if(placed.some(q=>Math.abs(q.x-p.x)<180&&p.y-q.y>24&&cy<q.top+q.height/2))continue;
-   const cost=length+Math.abs(cy-p.y)*.12+direction*.01;
-   if(cost<score){score=cost;best=c}
+ const candidates=(p:LabelInput)=>{
+  const boxes:Positioned[]=[];
+  for(let radius=0;radius<=Math.max(width,height);radius+=24)for(let direction=0;direction<16;direction++){
+   const angle=-Math.PI/2+direction*Math.PI/8;
+   const cx=p.x+Math.cos(angle)*(radius+p.width/2+10),cy=p.y+Math.sin(angle)*(radius+p.height/2+10);
+   boxes.push(position(p,{left:Math.max(6,Math.min(width-p.width-6,cx-p.width/2)),top:Math.max(6,Math.min(height-p.height-6,cy-p.height/2)),width:p.width,height:p.height}));
   }
-  if(best)placed.push(best);
+  return boxes;
+ };
+ const options=new Map(ordered.map(p=>[p.id,candidates(p)]));
+ const score=(p:Positioned,others:Positioned[])=>{
+  const cx=p.left+p.width/2,cy=p.top+p.height/2,end={x:p.endX,y:p.endY};
+  let cost=(cx-p.x)**2*.04+(cy-p.y)**2*.12;
+  for(const q of reserved){const ox=Math.max(0,Math.min(p.left+p.width,q.left+q.width)-Math.max(p.left,q.left)),oy=Math.max(0,Math.min(p.top+p.height,q.top+q.height)-Math.max(p.top,q.top));cost+=ox*oy*10000}
+  for(const q of inputs)if(q.x>p.left-5&&q.x<p.left+p.width+5&&q.y>p.top-5&&q.y<p.top+p.height+5)cost+=50000;
+  for(const q of others){
+   const ox=Math.max(0,Math.min(p.left+p.width+5,q.left+q.width+5)-Math.max(p.left,q.left)),oy=Math.max(0,Math.min(p.top+p.height+5,q.top+q.height+5)-Math.max(p.top,q.top));
+   cost+=ox*oy*10000;
+   const qe={x:q.endX,y:q.endY};
+   if(crosses(p,end,q,qe))cost+=30000;
+   if(throughBox(p,end,q)||throughBox(q,qe,p))cost+=10000;
+   const qcy=q.top+q.height/2;
+   if(Math.abs(q.x-p.x)<200&&Math.abs(p.y-q.y)>24&&(p.y-q.y)*(cy-qcy)<0)cost+=8000+(cy-qcy)**2;
+  }
+  return cost;
+ };
+ const choose=(p:LabelInput,others:Positioned[])=>{let best=options.get(p.id)![0],bestScore=Infinity;for(const box of options.get(p.id)!){const cost=score(box,others);if(cost<bestScore){best=box;bestScore=cost}}return best};
+ for(const p of ordered)placed.push(choose(p,placed));
+ // Revisit the full layout so an early label cannot force later stations away.
+ for(let pass=0;pass<2;pass++)for(let i=placed.length-1;i>=0;i--)placed[i]=choose(placed[i],placed.filter((_,j)=>j!==i));
+ // Exchange whole label slots when that improves the shared geography/crossings.
+ // Moving labels individually cannot escape a crowded set of occupied slots.
+ for(let pass=0;pass<2;pass++)for(let i=0;i<placed.length;i++)for(let j=i+1;j<placed.length;j++){
+  const a=placed[i],b=placed[j],others=placed.filter((_,k)=>k!==i&&k!==j);
+  const at=(p:Positioned,q:Positioned)=>position(p,{left:Math.max(6,Math.min(width-p.width-6,q.left+(q.width-p.width)/2)),top:Math.max(6,Math.min(height-p.height-6,q.top+(q.height-p.height)/2)),width:p.width,height:p.height});
+  const nextA=at(a,b),nextB=at(b,a);
+  if(score(nextA,[...others,nextB])+score(nextB,[...others,nextA])+1<score(a,[...others,b])+score(b,[...others,a])){placed[i]=nextA;placed[j]=nextB}
  }
  return placed;
 }
